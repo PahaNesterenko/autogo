@@ -1,0 +1,12 @@
+version: '2'
+services:
+    autogo-postgresql:
+        container_name: autogo-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/autogo/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=autogo
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
